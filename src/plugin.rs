@@ -49,7 +49,7 @@ impl AccountsDbPlugin for AccountsDbPluginTest {
     /// "accounts_selector" : {
     ///     "accounts" : \["*"\],
     /// }
-    /// None of the transction is stored.
+    /// None of the transaction is stored.
     /// "transaction_selector" : {
     ///     "mentions" : \["pubkey-1", "pubkey-2", ..., "pubkey-n"\],
     /// }
