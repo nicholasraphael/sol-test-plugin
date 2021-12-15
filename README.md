@@ -12,4 +12,4 @@ https://docs.solana.com/developing/test-validator
 
 Would need to run by updating the Solana config file. Running `solana config set --config <FILEPATH>`
 
-##### Currently there is a build issue when attempting to build program using build-bpf
+#### Currently there is a build issue when attempting to build program using build-bpf
