@@ -49,20 +49,6 @@ impl AccountsDbPlugin for AccountsDbPluginTest {
     /// "accounts_selector" : {
     ///     "accounts" : \["*"\],
     /// }
-    /// * "host", optional, specifies the PostgreSQL server.
-    /// * "user", optional, specifies the PostgreSQL user.
-    /// * "port", optional, specifies the PostgreSQL server's port.
-    /// * "connection_str", optional, the custom PostgreSQL connection string.
-    /// Please refer to https://docs.rs/postgres/0.19.2/postgres/config/struct.Config.html for the connection configuration.
-    /// When `connection_str` is set, the values in "host", "user" and "port" are ignored. If `connection_str` is not given,
-    /// `host` and `user` must be given.
-    /// * "threads" optional, specifies the number of worker threads for the plugin. A thread
-    /// maintains a PostgreSQL connection to the server. The default is '10'.
-    /// * "batch_size" optional, specifies the batch size of bulk insert when the AccountsDb is created
-    /// from restoring a snapshot. The default is '10'.
-    /// * "panic_on_db_errors", optional, contols if to panic when there are errors replicating data to the
-    /// PostgreSQL database. The default is 'false'.
-    /// * "transaction_selector", optional, controls if and what transaction to store. If this field is missing
     /// None of the transction is stored.
     /// "transaction_selector" : {
     ///     "mentions" : \["pubkey-1", "pubkey-2", ..., "pubkey-n"\],
@@ -80,9 +66,6 @@ impl AccountsDbPlugin for AccountsDbPluginTest {
     ///
     /// {
     ///    "libpath": "/home/solana/target/release/libsolana_accountsdb_plugin_postgres.so",
-    ///    "host": "host_foo",
-    ///    "user": "solana",
-    ///    "threads": 10,
     ///    "accounts_selector" : {
     ///       "owners" : ["9oT9R5ZyRovSVnt37QvVoBttGpNqR3J7unkb567NP8k3"]
     ///    }
